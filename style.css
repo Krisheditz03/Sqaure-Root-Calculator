@@ -1,0 +1,59 @@
+/* body
+{
+  background-color:#ffffff;
+}
+
+.container
+{
+  background-color:rgb(50, 75, 187);
+  border:2px solid #df0000;
+  display:block;
+  margin:auto;
+  width: 50%;
+}
+
+#number{
+    border-radius: 5px;
+    color: red;
+    background-color: greenyellow;
+    border: 2px solid red;
+}
+h2, #numberText
+{
+  font-family:arial;
+  text-align:center;
+}
+
+
+#numberText, #calculate, label
+{
+  font-family:arial;
+}
+
+.buttonDiv
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+#calculate
+{
+  background-color: red;
+  color: black; 
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+}
+label
+{
+  margin-left: 20px;
+  font-weight:bold;
+}
+ */

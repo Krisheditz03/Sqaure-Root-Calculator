@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="text-align: center; background: linear-gradient(#c9b350,#386e6c); height: 100vh;">
+   <div class="container">
+      <h2>Square Root Calculator</h2>
+       <label for="number">
+                    Enter a number:
+                  </label>
+                  <input style="border: 1px solid red; border-radius: 5px;" type="number" id="number" />
+      <p id="numberText"></p>
+         <div class="buttonDiv">
+           
+      <input style="border: 1px solid red; border-radius: 5px; background-color: yellow;" type="Submit" id="calculate" value="Calculate" /> </div>
+
+        <script>
+            var number = document.getElementById("number");
+var result = document.getElementById("numberText");
+
+function convert()
+{
+  var sqRoot = Math.sqrt(number.value);
+  result.innerHTML = sqRoot.toFixed();
+}
+
+function createEventListener()
+{
+  var calcBtn = document.getElementById("calculate");
+  
+  if (calcBtn.addEventListener)
+  {
+    calcBtn.addEventListener("click", convert, false);
+  }
+  else if (calcBtn.attachEvent)
+  {
+    calcBtn.attachEvent("onclick", convert);
+  }
+}
+
+if (window.addEventListener)
+{
+  window.addEventListener("load", createEventListener, false);
+}
+else if (window.attachEvent)
+{
+  window.attachEvent("onload", createEventListener);
+}
+        </script>
+</body>
+</html>
